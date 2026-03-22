@@ -16,19 +16,32 @@
 
 ## 🙋‍♂️ À propos / About me
 
-```ts
-const billy = {
-  name:       "Billy Rolph Exumé",
-  role:       "Full Stack Developer",
-  origin:     "🇭🇹 Haïti",
-  languages:  ["Français", "English", "Kreyòl"],
-  focus:      ["Web Apps", "Mobile Apps", "REST APIs", "Cloud"],
-  stack:      ["React", "Next.js", "Node.js", "React Native", "TypeScript"],
-  cloud:      ["Firebase", "Supabase", "Google Cloud Platform"],
-  openTo:     ["Freelance", "Emploi", "Collaboration", "Open Source"],
-  motto:      "Code with purpose. Build with passion. Ship with pride."
-};
-```
+<p>
+  🇭🇹 Basé en <strong>Haïti</strong> &nbsp;|&nbsp;
+  💼 <strong>Full Stack Developer</strong> &nbsp;|&nbsp;
+  🌍 Disponible pour du <strong>Freelance & Remote</strong>
+</p>
+
+<p>
+  Je conçois et développe des applications web et mobile modernes, de l'interface utilisateur jusqu'à l'API — propres, scalables et bien structurées.
+  <br/>
+  <em>I design and build modern web & mobile apps — clean, scalable, and well-crafted from UI to API.</em>
+</p>
+
+<p>
+  🗣️ &nbsp;
+  <img src="https://img.shields.io/badge/Français-🇫🇷-blue?style=flat-square"/>
+  <img src="https://img.shields.io/badge/English-🇺🇸-blue?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Kreyòl-🇭🇹-blue?style=flat-square"/>
+</p>
+
+<p>
+  🎯 Open to &nbsp;
+  <img src="https://img.shields.io/badge/Freelance-open-6EE7F7?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Emploi-open-6EE7F7?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Collaboration-open-6EE7F7?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Open%20Source-open-6EE7F7?style=flat-square"/>
+</p>
 
 ---
 
