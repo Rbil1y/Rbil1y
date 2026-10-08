@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="1200" height="120" aria-hidden="true">
+  <defs>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0.35">
+      <stop offset="0" stop-color="#0891B2"/>
+      <stop offset="0.5" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+
+  <!-- back wave -->
+  <path fill="url(#brand)" opacity="0.35" d="M0 120H1200V44C1000 84 800 18 600 50C400 82 200 20 0 48Z">
+    <animate attributeName="d" dur="11s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"
+      values="M0 120H1200V44C1000 84 800 18 600 50C400 82 200 20 0 48Z;
+              M0 120H1200V52C1000 16 800 80 600 46C400 14 200 78 0 40Z;
+              M0 120H1200V44C1000 84 800 18 600 50C400 82 200 20 0 48Z"/>
+  </path>
+
+  <!-- front wave -->
+  <path fill="url(#brand)" d="M0 120H1200V60C1000 20 800 100 600 62C400 24 200 92 0 52Z">
+    <animate attributeName="d" dur="9s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1; 0.45 0 0.55 1"
+      values="M0 120H1200V60C1000 20 800 100 600 62C400 24 200 92 0 52Z;
+              M0 120H1200V52C1000 92 800 30 600 58C400 86 200 26 0 62Z;
+              M0 120H1200V60C1000 20 800 100 600 62C400 24 200 92 0 52Z"/>
+  </path>
+</svg>

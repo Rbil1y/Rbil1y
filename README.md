@@ -1,5 +1,5 @@
 <!-- ═══════════════════════════ HEADER ═══════════════════════════ -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Billy%20Rolph%20Exum%C3%A9&fontSize=46&fontColor=ffffff&fontAlignY=36&desc=Full%20Stack%20Developer%20%C2%B7%20Web%20%26%20Mobile&descSize=20&descAlignY=58&animation=fadeIn" width="100%" alt="Billy Rolph Exumé — Full Stack Developer, Web & Mobile" />
+<img src="./assets/header.svg" width="100%" alt="Billy Rolph Exumé — Full Stack Developer, Web & Mobile" />
 
 <div align="center">
 
@@ -10,7 +10,7 @@
 
 **I design and build modern web & mobile apps — clean, scalable, and well-crafted from UI to API.**
 
-<a href="https://rbil1y.github.io/portfolio/"><img src="https://img.shields.io/badge/Portfolio-View_my_work-0891B2?style=for-the-badge&logo=githubpages&logoColor=white" alt="View my portfolio" /></a>
+<a href="https://billy.aylab.co"><img src="https://img.shields.io/badge/Portfolio-billy.aylab.co-0891B2?style=for-the-badge" alt="View my portfolio" /></a>
 <a href="mailto:Rbillyexume@gmail.com"><img src="https://img.shields.io/badge/Email-Get_in_touch-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email me" /></a>
 <img src="https://img.shields.io/badge/Status-Open_to_work-16A34A?style=for-the-badge" alt="Open to work" />
 
@@ -45,8 +45,16 @@ Je conçois et développe des applications web et mobile modernes, de l'interfac
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=react,nextjs,ts,tailwind,redux,nodejs,express,postgres,supabase,firebase,gcp,figma,git,github,vscode,postman&perline=8&theme=dark" />
-    <img alt="React, Next.js, TypeScript, Tailwind CSS, Redux, Node.js, Express, PostgreSQL, Supabase, Firebase, Google Cloud, Figma, Git, GitHub, VS Code, Postman" src="https://skillicons.dev/icons?i=react,nextjs,ts,tailwind,redux,nodejs,express,postgres,supabase,firebase,gcp,figma,git,github,vscode,postman&perline=8&theme=light" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=react,nextjs,ts,tailwind,redux,nodejs,express,postgres&theme=dark" />
+    <img height="48" alt="React, Next.js, TypeScript, Tailwind CSS, Redux, Node.js, Express, PostgreSQL" src="https://skillicons.dev/icons?i=react,nextjs,ts,tailwind,redux,nodejs,express,postgres&theme=light" />
+  </picture>
+  <br/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=supabase,firebase,gcp,figma,git,github,vscode&theme=dark" />
+    <img height="48" alt="Supabase, Firebase, Google Cloud, Figma, Git, GitHub, VS Code" src="https://skillicons.dev/icons?i=supabase,firebase,gcp,figma,git,github,vscode&theme=light" />
+  </picture> &nbsp;<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/LelouchFR/skill-icons@main/assets/claude-dark.svg" />
+    <img height="48" width="48" alt="Claude Code" title="Claude Code" src="https://cdn.jsdelivr.net/gh/LelouchFR/skill-icons@main/assets/claude-light.svg" />
   </picture>
 </p>
 
@@ -58,7 +66,7 @@ Je conçois et développe des applications web et mobile modernes, de l'interfac
 | 🔐 **Auth & data** | Firebase, Supabase, PostgreSQL — auth, real-time, storage |
 | ☁️ **Cloud** | Google Cloud Platform |
 | 🎨 **Design → code** | Figma to pixel-perfect UI |
-| 🧰 **Workflow** | Git, GitHub, VS Code, Postman |
+| 🧰 **Workflow** | Git, GitHub, VS Code, Claude Code |
 
 <br/>
 
@@ -67,18 +75,22 @@ Je conçois et développe des applications web et mobile modernes, de l'interfac
 
 <table>
   <tr>
-    <td width="50%" valign="top">
+    <td colspan="2" valign="top">
 
-### ⚡ Zine
+### 🍳 Zine
 
-<img src="https://img.shields.io/badge/status-in_development-F59E0B?style=flat-square" alt="In development" />
+<img src="https://img.shields.io/badge/status-live-16A34A?style=flat-square" alt="Live" />
+<img src="https://img.shields.io/badge/iOS_%26_Android-0891B2?style=flat-square" alt="iOS and Android" />
 
-Details coming soon.
+**A recipe planning app** — plan what you'll cook, right from your phone.
 
-<!-- When it's live, replace the line above with:
-     a one-line pitch · the stack · [Live demo](https://…) · [Code](https://…) -->
+<!-- Store links: wrap each badge in <a href="…"> with the App Store / Google Play URL -->
+<img src="https://img.shields.io/badge/App_Store-Download-0D96F6?style=for-the-badge&logo=appstore&logoColor=white" alt="Download on the App Store" />
+<img src="https://img.shields.io/badge/Google_Play-Get_it-34A853?style=for-the-badge&logo=googleplay&logoColor=white" alt="Get it on Google Play" />
 
 </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
 
 ### ⚡ Zilo
@@ -87,14 +99,24 @@ Details coming soon.
 
 Details coming soon.
 
-<!-- When it's live, replace the line above with:
-     a one-line pitch · the stack · [Live demo](https://…) · [Code](https://…) -->
+<!-- When it's live: one-line pitch · the stack · [Live demo](https://…) · [Code](https://…) -->
+
+</td>
+    <td width="50%" valign="top">
+
+### ⚡ Aygen
+
+<img src="https://img.shields.io/badge/status-in_development-F59E0B?style=flat-square" alt="In development" />
+
+Details coming soon.
+
+<!-- When it's live: one-line pitch · the stack · [Live demo](https://…) · [Code](https://…) -->
 
 </td>
   </tr>
 </table>
 
-Browse everything else on my **[portfolio →](https://rbil1y.github.io/portfolio/)**
+Browse everything else on my **[portfolio →](https://billy.aylab.co)**
 
 <br/>
 
@@ -121,7 +143,7 @@ Browse everything else on my **[portfolio →](https://rbil1y.github.io/portfoli
 Have a project in mind or a role to fill? I'd love to hear about it.
 
 📧 **Email** — [Rbillyexume@gmail.com](mailto:Rbillyexume@gmail.com)<br/>
-🌐 **Portfolio** — [rbil1y.github.io/portfolio](https://rbil1y.github.io/portfolio/)
+🌐 **Portfolio** — [billy.aylab.co](https://billy.aylab.co)
 
 <div align="center">
 
@@ -133,4 +155,4 @@ Have a project in mind or a role to fill? I'd love to hear about it.
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=110&section=footer" width="100%" alt="" />
+<img src="./assets/footer.svg" width="100%" alt="" />
