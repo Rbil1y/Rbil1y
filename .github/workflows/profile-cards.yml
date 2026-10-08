@@ -1,0 +1,68 @@
+# Generates the GitHub stats and streak cards shown in README.md
+# (light + dark versions), and commits them to the profile/ folder.
+#
+# Where it goes: .github/workflows/profile-cards.yml in the Rbil1y/Rbil1y repo.
+#
+# Optional — to include private contributions: create a Personal Access Token
+# with the `repo` and `read:user` scopes, save it as a repository secret named
+# STATS_TOKEN, and replace `secrets.GITHUB_TOKEN` below with `secrets.STATS_TOKEN`.
+
+name: Update profile cards
+
+on:
+  schedule:
+    - cron: "17 6 * * *" # once a day
+  workflow_dispatch: # lets you run it manually from the Actions tab
+  push:
+    paths:
+      - ".github/workflows/profile-cards.yml" # runs right after you add or edit this file
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v6
+
+      # ── Stats card ──────────────────────────────────────────────
+      - name: Stats card (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&hide=commits&hide_border=true&bg_color=0D1117&title_color=6EE7F7&icon_color=6EE7F7&ring_color=6EE7F7&text_color=C9D1D9
+          path: profile/stats-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Stats card (light)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&hide=commits&hide_border=true&bg_color=FFFFFF&title_color=0E7490&icon_color=0E7490&ring_color=0E7490&text_color=1F2328
+          path: profile/stats-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # ── Streak card ─────────────────────────────────────────────
+      - name: Streak card (dark)
+        uses: DenverCoder1/github-readme-streak-stats@main
+        with:
+          options: user=${{ github.repository_owner }}&hide_border=true&timezone=America/Port-au-Prince&background=0D1117&ring=6EE7F7&fire=6EE7F7&currStreakLabel=6EE7F7&currStreakNum=E6EDF3&sideNums=E6EDF3&sideLabels=9198A1&dates=9198A1&stroke=30363D
+          path: profile/streak-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Streak card (light)
+        uses: DenverCoder1/github-readme-streak-stats@main
+        with:
+          options: user=${{ github.repository_owner }}&hide_border=true&timezone=America/Port-au-Prince&background=FFFFFF&ring=0E7490&fire=0E7490&currStreakLabel=0E7490&currStreakNum=1F2328&sideNums=1F2328&sideLabels=59636E&dates=59636E&stroke=D1D9E0
+          path: profile/streak-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # ── Save ────────────────────────────────────────────────────
+      - name: Commit cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg
+          git commit -m "chore: update profile cards" || exit 0
+          git push
